@@ -2,7 +2,7 @@
 //  CreateAccountView.swift
 //  TravelGuide
 //
-//  Created by Optimus Prime on 30.03.2022.
+//  Created by Yaroslav Orlov on 30.03.2022.
 //
 
 import SwiftUI

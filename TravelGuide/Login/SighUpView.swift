@@ -2,7 +2,7 @@
 //  SighUpView.swift
 //  TravelGuide
 //
-//  Created by Optimus Prime on 31.03.2022.
+//  Created by Yaroslav Orlov on 31.03.2022.
 //
 
 import SwiftUI

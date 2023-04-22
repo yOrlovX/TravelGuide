@@ -2,7 +2,7 @@
 //  SideBarStack.swift
 //  TravelGuide
 //
-//  Created by Optimus Prime on 07.04.2022.
+//  Created by Yaroslav Orlov on 07.04.2022.
 //
 
 import SwiftUI
