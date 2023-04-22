@@ -12,7 +12,7 @@ struct TravelGuideApp: App {
   
     var body: some Scene {
         WindowGroup {
-          HomePageMain()
+          MainView()
         }
     }
 }

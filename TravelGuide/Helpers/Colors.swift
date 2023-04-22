@@ -17,3 +17,7 @@ extension Color {
     let twiterButton = Color("twiterColor")
   }
 }
+
+struct Colors {
+  static let darkGray = Color("darkGray")
+}

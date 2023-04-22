@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct HomePageMain: View {
+struct ExploreView: View {
   
   @State var showSidebar: Bool = false
   
   var body: some View {
     
     ZStack(alignment: .leading) {
-      HomePage(isPresented: $showSidebar)
+//      HomePage(isPresented: $showSidebar)
       VStack {
         
         HStack {
@@ -68,9 +68,9 @@ struct HomePageMain: View {
 }
 
 
-struct HomePageMain_Previews: PreviewProvider {
+struct ExploreView_Previews: PreviewProvider {
   static var previews: some View {
-    HomePageMain()
+    ExploreView()
   }
 }
 }
