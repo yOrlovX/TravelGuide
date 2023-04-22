@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		923EF77329F42A0C00A1383F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923EF77229F42A0C00A1383F /* MainView.swift */; };
 		9282ECCD27FF00E400C45B3D /* SideBarStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282ECCC27FF00E400C45B3D /* SideBarStack.swift */; };
 		9282ECCF280172AB00C45B3D /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282ECCE280172AB00C45B3D /* HomePage.swift */; };
 		9282ECD12801B05200C45B3D /* HomePageMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282ECD02801B05200C45B3D /* HomePageMain.swift */; };
 		9299BD9A27F461AF007CA522 /* TravelGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BD9927F461AF007CA522 /* TravelGuideApp.swift */; };
-		9299BD9C27F461AF007CA522 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BD9B27F461AF007CA522 /* ContentView.swift */; };
 		9299BD9E27F461B1007CA522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9299BD9D27F461B1007CA522 /* Assets.xcassets */; };
 		9299BDA127F461B1007CA522 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9299BDA027F461B1007CA522 /* Preview Assets.xcassets */; };
 		9299BDA827F4684E007CA522 /* StartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDA727F4684E007CA522 /* StartedView.swift */; };
@@ -34,12 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		923EF77229F42A0C00A1383F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9282ECCC27FF00E400C45B3D /* SideBarStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarStack.swift; sourceTree = "<group>"; };
 		9282ECCE280172AB00C45B3D /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		9282ECD02801B05200C45B3D /* HomePageMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageMain.swift; sourceTree = "<group>"; };
 		9299BD9627F461AF007CA522 /* TravelGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9299BD9927F461AF007CA522 /* TravelGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelGuideApp.swift; sourceTree = "<group>"; };
-		9299BD9B27F461AF007CA522 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9299BD9D27F461B1007CA522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9299BDA027F461B1007CA522 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9299BDA727F4684E007CA522 /* StartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartedView.swift; sourceTree = "<group>"; };
@@ -72,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		923EF77129F429FC00A1383F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				923EF77229F42A0C00A1383F /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		9282ECCB27FF00A600C45B3D /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +109,8 @@
 		9299BD9827F461AF007CA522 /* TravelGuide */ = {
 			isa = PBXGroup;
 			children = (
+				923EF77129F429FC00A1383F /* Main */,
 				9299BD9927F461AF007CA522 /* TravelGuideApp.swift */,
-				9299BD9B27F461AF007CA522 /* ContentView.swift */,
 				9282ECCB27FF00A600C45B3D /* Home */,
 				9299BDC227F59C47007CA522 /* WelcomeScreens */,
 				9299BDB327F4A90F007CA522 /* Login */,
@@ -236,9 +244,9 @@
 				9299BDB827F4AFD9007CA522 /* LoginDoneView.swift in Sources */,
 				9299BDBC27F4DE39007CA522 /* SendPasswordView.swift in Sources */,
 				9299BDAE27F477F4007CA522 /* CreateAccountView.swift in Sources */,
+				923EF77329F42A0C00A1383F /* MainView.swift in Sources */,
 				9299BDBE27F57866007CA522 /* DiamondShapeImage.swift in Sources */,
 				9299BDAC27F46F0C007CA522 /* AdaptivePaddings.swift in Sources */,
-				9299BD9C27F461AF007CA522 /* ContentView.swift in Sources */,
 				9299BDAA27F46EC7007CA522 /* Colors.swift in Sources */,
 				9299BD9A27F461AF007CA522 /* TravelGuideApp.swift in Sources */,
 				92D954A227F75F0F005EB314 /* CityCell.swift in Sources */,
