@@ -21,7 +21,7 @@
 		9299BDAA27F46EC7007CA522 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDA927F46EC7007CA522 /* Colors.swift */; };
 		9299BDAC27F46F0C007CA522 /* AdaptivePaddings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDAB27F46F0C007CA522 /* AdaptivePaddings.swift */; };
 		9299BDB627F4AE58007CA522 /* ButtonsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDB527F4AE58007CA522 /* ButtonsStyle.swift */; };
-		9299BDB827F4AFD9007CA522 /* LoginDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDB727F4AFD9007CA522 /* LoginDoneView.swift */; };
+		9299BDB827F4AFD9007CA522 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDB727F4AFD9007CA522 /* LoginView.swift */; };
 		9299BDBA27F4D2AF007CA522 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDB927F4D2AF007CA522 /* ForgotPasswordView.swift */; };
 		9299BDBC27F4DE39007CA522 /* SendPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDBB27F4DE39007CA522 /* SendPasswordView.swift */; };
 		9299BDBE27F57866007CA522 /* DiamondShapeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDBD27F57866007CA522 /* DiamondShapeImage.swift */; };
@@ -51,7 +51,7 @@
 		9299BDA927F46EC7007CA522 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9299BDAB27F46F0C007CA522 /* AdaptivePaddings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptivePaddings.swift; sourceTree = "<group>"; };
 		9299BDB527F4AE58007CA522 /* ButtonsStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsStyle.swift; sourceTree = "<group>"; };
-		9299BDB727F4AFD9007CA522 /* LoginDoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDoneView.swift; sourceTree = "<group>"; };
+		9299BDB727F4AFD9007CA522 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9299BDB927F4D2AF007CA522 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		9299BDBB27F4DE39007CA522 /* SendPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPasswordView.swift; sourceTree = "<group>"; };
 		9299BDBD27F57866007CA522 /* DiamondShapeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondShapeImage.swift; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				9299BDA727F4684E007CA522 /* StartView.swift */,
-				9299BDB727F4AFD9007CA522 /* LoginDoneView.swift */,
+				9299BDB727F4AFD9007CA522 /* LoginView.swift */,
 				9299BDB927F4D2AF007CA522 /* ForgotPasswordView.swift */,
 				9299BDBB27F4DE39007CA522 /* SendPasswordView.swift */,
 				9299BDBF27F57DAF007CA522 /* CreateAccountView.swift */,
@@ -247,7 +247,7 @@
 				9299BDC627F5A625007CA522 /* SegmentProgresView.swift in Sources */,
 				9282ECD12801B05200C45B3D /* ExploreView.swift in Sources */,
 				9299BDC827F6E7FC007CA522 /* SecondWelcomeScreen.swift in Sources */,
-				9299BDB827F4AFD9007CA522 /* LoginDoneView.swift in Sources */,
+				9299BDB827F4AFD9007CA522 /* LoginView.swift in Sources */,
 				9299BDBC27F4DE39007CA522 /* SendPasswordView.swift in Sources */,
 				923EF77329F42A0C00A1383F /* MainView.swift in Sources */,
 				9299BDBE27F57866007CA522 /* DiamondShapeImage.swift in Sources */,

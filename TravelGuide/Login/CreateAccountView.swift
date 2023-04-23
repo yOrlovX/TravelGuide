@@ -14,13 +14,14 @@ struct CreateAccountView: View {
   @State private var password: String = ""
   @State private var confirmPassword = ""
   
+  @Binding var viewState: ViewStates
+  
     var body: some View {
       ZStack {
         VStack {
           Text("Create Account")
             .font(.system(size: 28, weight: .bold))
           .foregroundColor(Color.white)
-          
           HStack(spacing: 13) {
             Button {} label: {
               Image("facebook1")
@@ -30,8 +31,6 @@ struct CreateAccountView: View {
             .frame(width: 157, height: 48)
             .background(Color.ui.facebookButton)
             .cornerRadius(20)
-            
-            
             Button {} label: {
               Image("twiter")
               Text("Twiter")
@@ -42,48 +41,44 @@ struct CreateAccountView: View {
             .cornerRadius(20)
           }
           .padding(.bottom, 40)
-          
           Text("or log in with email")
             .font(.system(size: 14, weight: .regular))
             .foregroundColor(.gray)
             .padding()
-          
           VStack(spacing: 20) {
-            TextField("  Username", text: $userName)
+            TextField("Username", text: $userName)
+              .padding()
               .frame(width: AdaptivePaddings.loginButton, height: 48)
               .foregroundColor(.black)
               .background(.white)
               .cornerRadius(20)
-            
-            TextField("  Your email", text: $email)
+            TextField("Your email", text: $email)
+              .padding()
               .frame(width: AdaptivePaddings.loginButton, height: 48)
               .foregroundColor(.black)
               .background(.white)
               .cornerRadius(20)
-            
-            TextField("  Password", text: $password)
+            TextField("Password", text: $password)
+              .padding()
               .frame(width: AdaptivePaddings.loginButton, height: 48)
               .foregroundColor(.black)
               .background(.white)
               .cornerRadius(20)
-            
-            TextField("  Confirm password", text: $confirmPassword)
+            TextField("Confirm password", text: $confirmPassword)
+              .padding()
               .frame(width: AdaptivePaddings.loginButton, height: 48)
               .foregroundColor(.black)
               .background(.white)
               .cornerRadius(20)
-            
             Button("Sign Up", action: {})
               .buttonStyle(BlueButton())
           }
           .padding(.bottom, 90)
-          
           HStack(spacing: 2) {
             Text("Already have an Account?")
               .font(.system(size: 14, weight: .regular))
               .foregroundColor(Color.white)
-            
-            Button("Log In", action: {})
+            Button("Log In", action: { self.viewState = .login })
               .font(.system(size: 14, weight: .medium))
           }
           .padding()
@@ -96,6 +91,6 @@ struct CreateAccountView: View {
 
 struct CreateAccountView_Previews: PreviewProvider {
     static var previews: some View {
-      CreateAccountView()
+      CreateAccountView(viewState: .constant(.register))
     }
 }

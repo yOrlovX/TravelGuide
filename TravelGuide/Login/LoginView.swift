@@ -11,6 +11,7 @@ struct LoginView: View {
   
   @State private var login: String = ""
   @State private var password: String = ""
+  @Binding var viewState: ViewStates
   
   var body: some View {
     ZStack {
@@ -41,12 +42,14 @@ struct LoginView: View {
           .foregroundColor(.gray)
           .padding()
         VStack {
-          TextField("  Login", text: $login)
+          TextField("Login", text: $login)
+            .padding()
             .frame(width: AdaptivePaddings.loginButton, height: 48)
             .background(.white)
             .cornerRadius(20)
             .foregroundColor(.black)
-          TextField("  Password", text: $password)
+          TextField("Password", text: $password)
+            .padding()
             .frame(width: AdaptivePaddings.loginButton, height: 48)
             .background(.white)
             .cornerRadius(20)
@@ -54,7 +57,7 @@ struct LoginView: View {
             .padding()
           HStack {
             Spacer()
-            Button("Forgot password?", action: { })
+            Button("Forgot password?", action: {self.viewState = .forgotPassword})
               .font(.system(size: 14, weight: .regular))
               .foregroundColor(.gray)
               .padding()
@@ -66,8 +69,7 @@ struct LoginView: View {
               .font(.system(size: 14, weight: .regular))
               .foregroundColor(.gray)
               .padding()
-            
-            Button("Sign In", action: {})
+            Button("Sign In", action: { self.viewState = .register })
               .frame(width: AdaptivePaddings.loginButton, height: 48)
               .foregroundColor(Color.black)
               .background(Color.white)
@@ -85,6 +87,6 @@ struct LoginView: View {
 
 struct LoginDoneView_Previews: PreviewProvider {
   static var previews: some View {
-    LoginView()
+    LoginView(viewState: .constant(.login))
   }
 }

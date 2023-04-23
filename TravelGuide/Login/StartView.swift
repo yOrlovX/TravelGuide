@@ -12,6 +12,7 @@ enum ViewStates {
   case loginOrCreateAccount
   case login
   case register
+  case forgotPassword
 }
 
 struct StartView: View {
@@ -25,11 +26,11 @@ struct StartView: View {
       case .loginOrCreateAccount:
         loginOrCreateAccountState
       case .login:
-        LoginView()
+        LoginView(viewState: $viewState)
       case .register:
-        CreateAccountView()
-      default:
-        EmptyView()
+        CreateAccountView(viewState: $viewState)
+      case .forgotPassword:
+        ForgotPasswordView(viewState: $viewState)
       }
     }
   }
