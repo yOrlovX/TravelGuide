@@ -30,6 +30,8 @@
 		9299BDC627F5A625007CA522 /* SegmentProgresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDC527F5A625007CA522 /* SegmentProgresView.swift */; };
 		9299BDC827F6E7FC007CA522 /* SecondWelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDC727F6E7FC007CA522 /* SecondWelcomeScreen.swift */; };
 		9299BDCA27F6EDC8007CA522 /* Honeycomb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299BDC927F6EDC8007CA522 /* Honeycomb.swift */; };
+		92ADEB4829F7F8CC00F2E4ED /* ImageVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADEB4729F7F8CC00F2E4ED /* ImageVm.swift */; };
+		92ADEB4B29F7FB1600F2E4ED /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADEB4A29F7FB1600F2E4ED /* ImageService.swift */; };
 		92D954A227F75F0F005EB314 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D954A127F75F0E005EB314 /* CityCell.swift */; };
 		92D954A427F9B092005EB314 /* ThirdWelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D954A327F9B092005EB314 /* ThirdWelcomeScreen.swift */; };
 		92D954A627F9B0E1005EB314 /* CityCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D954A527F9B0E1005EB314 /* CityCellModel.swift */; };
@@ -60,6 +62,8 @@
 		9299BDC527F5A625007CA522 /* SegmentProgresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentProgresView.swift; sourceTree = "<group>"; };
 		9299BDC727F6E7FC007CA522 /* SecondWelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWelcomeScreen.swift; sourceTree = "<group>"; };
 		9299BDC927F6EDC8007CA522 /* Honeycomb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honeycomb.swift; sourceTree = "<group>"; };
+		92ADEB4729F7F8CC00F2E4ED /* ImageVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVm.swift; sourceTree = "<group>"; };
+		92ADEB4A29F7FB1600F2E4ED /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		92D954A127F75F0E005EB314 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		92D954A327F9B092005EB314 /* ThirdWelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdWelcomeScreen.swift; sourceTree = "<group>"; };
 		92D954A527F9B0E1005EB314 /* CityCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCellModel.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				9282ECCC27FF00E400C45B3D /* SideBarStack.swift */,
 				9282ECCE280172AB00C45B3D /* HomePage.swift */,
 				9282ECD02801B05200C45B3D /* ExploreView.swift */,
+				92ADEB4729F7F8CC00F2E4ED /* ImageVm.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 		9299BD9827F461AF007CA522 /* TravelGuide */ = {
 			isa = PBXGroup;
 			children = (
+				92ADEB4929F7FAEF00F2E4ED /* Services */,
 				9299BD9927F461AF007CA522 /* TravelGuideApp.swift */,
 				923EF77129F429FC00A1383F /* Main */,
 				9282ECCB27FF00A600C45B3D /* Home */,
@@ -171,6 +177,14 @@
 				92D954A527F9B0E1005EB314 /* CityCellModel.swift */,
 			);
 			path = WelcomeScreens;
+			sourceTree = "<group>";
+		};
+		92ADEB4929F7FAEF00F2E4ED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				92ADEB4A29F7FB1600F2E4ED /* ImageService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +278,9 @@
 				9282ECCD27FF00E400C45B3D /* SideBarStack.swift in Sources */,
 				9299BDCA27F6EDC8007CA522 /* Honeycomb.swift in Sources */,
 				923EF77729F43AD900A1383F /* CornerRadiusStyle.swift in Sources */,
+				92ADEB4B29F7FB1600F2E4ED /* ImageService.swift in Sources */,
 				9282ECCF280172AB00C45B3D /* HomePage.swift in Sources */,
+				92ADEB4829F7F8CC00F2E4ED /* ImageVm.swift in Sources */,
 				9299BDA827F4684E007CA522 /* StartView.swift in Sources */,
 				923EF77529F4346C00A1383F /* TabButton.swift in Sources */,
 			);

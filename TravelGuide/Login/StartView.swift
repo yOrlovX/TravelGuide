@@ -80,12 +80,15 @@ extension StartView {
   
   private var loginOrCreateAccountState: some View {
     ZStack {
+      Color.black
+        .ignoresSafeArea()
       Image("bg-img")
         .resizable()
         .aspectRatio(contentMode: .fill)
-        .padding(.top, 150)
-        .padding(.bottom, 150)
+        .frame(maxWidth: .infinity)
+        .frame(maxHeight: UIScreen.main.bounds.height / 3)
       VStack(spacing: 4) {
+        Spacer()
         Text("Plan your trips")
           .foregroundColor(Color.white)
           .font(.system(size: 28, weight: .bold))
@@ -93,18 +96,19 @@ extension StartView {
           .foregroundColor(Color.gray)
           .font(.system(size: 16, weight: .medium))
         Spacer()
+        Spacer()
+        Spacer()
+        Spacer()
+        Spacer()
         VStack(spacing: 20) {
           Button("Log In", action: { self.viewState = .login })
             .buttonStyle(BlueButton())
-          Button("Create Account", action: {  self.viewState = .register })
+          Button("Create Account", action: { self.viewState = .register })
             .buttonStyle(WhiteButton())
         }
+        Spacer()
       }
-      .padding(.top, 88)
-      .padding(.bottom, 163)
     }
-    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-    .background(Color.black)
   }
 }
 

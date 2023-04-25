@@ -31,7 +31,7 @@ struct ForgotPasswordView: View {
             .frame(width: UIScreen.main.bounds.width - 48, height: 48)
             .background(.white)
             .cornerRadius(20)
-          Button("Send Password", action: { })
+          Button("Send Password", action: { self.viewState = .login })
             .buttonStyle(BlueButton())
         }
         .padding(.top, 24)
