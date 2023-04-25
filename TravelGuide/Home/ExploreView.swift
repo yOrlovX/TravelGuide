@@ -16,9 +16,14 @@ struct ExploreView: View {
   
   var body: some View {
     VStack {
-      mainSection
-      popularDestinationSection
+      ScrollView(.vertical) {
+        mainSection
+        popularDestinationSection
+        topToDoSection
+        hotelBestDealsSection
+      }
     }
+    .background(.black)
   }
 }
 struct ExploreView_Previews: PreviewProvider {
@@ -68,15 +73,72 @@ extension ExploreView {
   }
   
   private var popularDestinationSection: some View {
-    ScrollView(.horizontal) {
-      HStack(spacing: 16) {
-        ForEach(imageVM.photos) { image in
-          Image(uiImage: image)
-            .resizable()
-            .scaledToFill()
-            .frame(maxHeight: 130)
-            .frame(maxWidth: 200)
-            
+    VStack(alignment: .leading) {
+      Text("Popular destination")
+        .font(.system(size: 16))
+        .padding(.vertical, 7)
+        .padding(.horizontal, 16)
+        .background(.green)
+        .cornerRadius(10, corners: [.topRight, .bottomRight])
+      ScrollView(.horizontal) {
+        HStack(spacing: 16) {
+          ForEach(imageVM.photos) { image in
+            Image(uiImage: image)
+              .resizable()
+              .scaledToFill()
+              .frame(maxHeight: 130)
+              .frame(maxWidth: 200)
+              .cornerRadius(20)
+              
+          }
+        }
+      }
+    }
+  }
+  
+  private var topToDoSection: some View {
+    VStack(alignment: .leading) {
+      Text("Top to do ")
+        .font(.system(size: 16))
+        .padding(.vertical, 7)
+        .padding(.horizontal, 16)
+        .background(.green)
+        .cornerRadius(10, corners: [.topRight, .bottomRight])
+      ScrollView(.horizontal) {
+        HStack(spacing: 16) {
+          ForEach(imageVM.photos) { image in
+            Image(uiImage: image)
+              .resizable()
+              .scaledToFill()
+              .frame(maxHeight: 309)
+              .frame(maxWidth: 148)
+              .cornerRadius(20)
+              
+          }
+        }
+      }
+    }
+  }
+  
+  private var hotelBestDealsSection: some View {
+    VStack(alignment: .leading) {
+      Text("Hotel Best deals")
+        .font(.system(size: 16))
+        .padding(.vertical, 7)
+        .padding(.horizontal, 16)
+        .background(.green)
+        .cornerRadius(10, corners: [.topRight, .bottomRight])
+      ScrollView(.horizontal) {
+        HStack(spacing: 16) {
+          ForEach(imageVM.photos) { image in
+            Image(uiImage: image)
+              .resizable()
+              .scaledToFill()
+              .frame(maxHeight: 100)
+              .frame(maxWidth: 100)
+              .cornerRadius(20)
+              
+          }
         }
       }
     }
